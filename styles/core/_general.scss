@@ -1,0 +1,15 @@
+//General style
+html {
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    font-family: var(--amulya-font);
+    letter-spacing: rem(-0.5);
+}
+
