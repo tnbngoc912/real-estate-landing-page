@@ -1,10 +1,10 @@
 export const Button = ({ label = "", to = "", type = "", className = "" }) => {
   const renderClassName = () => {
     switch (type) {
-      case "black":
-        return "btn btn--secondary text-white rounded-full bg-black-100";
-      case "no-outline":
-        return "text-black font-medium";
+      case "primary":
+        return "btn text-white rounded-full bg-black-100";
+      case "secondary":
+        return "btn-secondary text-black font-medium hover:text-primary";
       default:
         break;
     }
@@ -13,7 +13,7 @@ export const Button = ({ label = "", to = "", type = "", className = "" }) => {
     <a
       role="button"
       href={to}
-      className={`font-amulya ${className} ${renderClassName()}`}
+      className={`whitespace-nowrap capitalize ${className} ${renderClassName()}`}
     >
       {label}
     </a>

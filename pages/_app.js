@@ -1,6 +1,12 @@
 import "@styles/globals.scss";
-
+import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
+
+export const inter = Inter({ subsets: ["latin"] });
+
+export const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
+
 const amulya = localFont({
   src: [
     {
