@@ -2,10 +2,10 @@ export const CARD_SETTINGS = {
   arrows: false,
   dots: false,
   infinite: true,
-  slidesToShow: 3.5,
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  speed: 2000,
+  speed: 5000,
   autoplaySpeed: 0,
   cssEase: "linear",
   responsive: [

@@ -9,9 +9,9 @@ export const HomeBanner = () => {
   };
 
   return (
-    <header class="">
+    <header className="">
       <div
-        class="w-full bg-center bg-cover"
+        className="w-full bg-center bg-cover"
         style={{
           backgroundImage: ` url('/hero-banner.jpg')`
         }}
@@ -23,11 +23,11 @@ export const HomeBanner = () => {
           </p>
         </div>
       </div>
-      <div class="scroll-down" onClick={handleClickScroll}>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <span class="text">Scroll down</span>
+      <div className="scroll-down" onClick={handleClickScroll}>
+        <div className="chevron"></div>
+        <div className="chevron"></div>
+        <div className="chevron"></div>
+        <span className="text">Scroll down</span>
       </div>
     </header>
   );
