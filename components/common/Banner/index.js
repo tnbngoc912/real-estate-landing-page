@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import useScrolledPage from "@/utils/hooks/useScrolledPage";
 
 export const HomeBanner = () => {
+  const isScrolled = useScrolledPage();
   const handleClickScroll = () => {
     const element = document.getElementById("solutionSection");
     if (element) {
@@ -23,12 +24,14 @@ export const HomeBanner = () => {
           </p>
         </div>
       </div>
-      <div className="scroll-down" onClick={handleClickScroll}>
-        <div className="chevron"></div>
-        <div className="chevron"></div>
-        <div className="chevron"></div>
-        <span className="text">Scroll down</span>
-      </div>
+      {!isScrolled && (
+        <div className="scroll-down" onClick={handleClickScroll}>
+          <div className="chevron"></div>
+          <div className="chevron"></div>
+          <div className="chevron"></div>
+          <span className="text">Scroll down</span>
+        </div>
+      )}
     </header>
   );
 };

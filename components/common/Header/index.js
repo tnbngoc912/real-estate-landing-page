@@ -2,24 +2,10 @@ import { useEffect, useState } from "react";
 import { Button } from "../Button/Button";
 import { ButtonGroup } from "../Button/ButtonGroup";
 import { Nav } from "../Nav";
+import useScrolledPage from "@/utils/hooks/useScrolledPage";
 
 export const Header = () => {
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const [isScrolled, setScrolled] = useState(false);
-
-  const handleScroll = () => {
-    if (window.pageYOffset > 100) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+  const isScrolled = useScrolledPage();
 
   return (
     <header

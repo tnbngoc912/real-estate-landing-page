@@ -100,8 +100,6 @@ export const Footer = () => {
           </div>
         </div>
         <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-
-        {/* Footer Credits */}
         <div className="footer-credits relative z-10">
           <div className="flex flex-col lg:flex-row justify-between py-4">
             <p className="my-0">@2023Capella. All rights reserved</p>
