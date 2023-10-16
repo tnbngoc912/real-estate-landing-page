@@ -51,11 +51,12 @@ export const SolutionSection = () => {
           </div>
           <div className="imageWrapper overflow-hidden relative inline-block	">
             <Image
-              layout="fill"
-              objectFit="cover"
-              className="image"
               src="/solution.webp"
-              alt=""
+              width={0}
+              height={0}
+              sizes="100vw"
+              alt="solution-img"
+              className="mx-auto w-[70%] lg:w-[100%]"
             />
 
             {tiles.map((t, i) => (
