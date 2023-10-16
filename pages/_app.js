@@ -17,7 +17,8 @@ const amulya = localFont({
       path: "../public/fonts/amulya-medium.woff2",
       weight: "500"
     }
-  ]
+  ],
+  display: "swap"
 });
 
 export default function App({ Component, pageProps }) {

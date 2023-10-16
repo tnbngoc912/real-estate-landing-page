@@ -3,9 +3,11 @@ import { Button } from "../Button/Button";
 import { ButtonGroup } from "../Button/ButtonGroup";
 import { Nav } from "../Nav";
 import useScrolledPage from "@/utils/hooks/useScrolledPage";
+import useOnClickOutside from "@/utils/hooks/useClickOutside";
 
 export const Header = () => {
   const isScrolled = useScrolledPage();
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <header
@@ -14,9 +16,13 @@ export const Header = () => {
         isScrolled && "header-scrolled"
       }`}
     >
-      <div className="header--container wrap wrap-px ">
+      <div
+        className={`header--container wrap wrap-px  ${
+          isNavOpen ? "custom-show" : "custom-hide"
+        }`}
+      >
         <div className="header-logo--container">
-          <Nav />
+          <Nav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
         </div>
         <div className="flex items-center ml-auto">
           <ButtonGroup className="hidden md:block">

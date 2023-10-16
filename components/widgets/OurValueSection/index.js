@@ -6,16 +6,19 @@ export const OurValueSection = () => {
   return (
     <LayoutSection className="bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4">
-        <div className="relative order-2 lg:order-1">
-          <div className="bg-primary absolute w-28 h-20 left-[-27px] bottom-[-27px]"></div>
-          <div className="flex relative">
-            <Image
-              className="pt-4 pr-2"
-              alt="img-value"
-              width={433}
-              height={383}
-              src="/value_1.png"
-            />
+        <div className=" order-2 lg:order-1">
+          <div className="flex justify-center">
+            <div className="relative h-full">
+              <div className="bg-primary absolute w-24 h-14 md:w-32 left-[-30px]  bottom-[-20px] md:h-16 lg:w-44 lg:h-28  md:left-[-20px] md:bottom-[-20px]"></div>
+              <Image
+                className="pt-4 pr-2 z-1 relative"
+                alt="img-value"
+                width={433}
+                height={383}
+                src="/value_1.png"
+              />
+            </div>
+
             <Image
               className="pb-4"
               alt="img-value"

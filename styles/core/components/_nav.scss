@@ -5,15 +5,15 @@
         @apply text-black/60;
     }
     .mobile-menu {
-        @apply lg:ml-3 inline-flex items-center p-2 text-white lg:hidden md:mr-auto;
+        @apply lg:ml-3 inline-flex items-center p-2 text-white lg:hidden md:hidden md:mr-auto;
     }
     .header-nav {
         .header-nav--menu-container {
-            @apply absolute left-0 w-full lg:relative lg:block lg:w-auto;
+            @apply absolute left-0 w-full md:relative md:block md:w-auto lg:relative lg:block lg:w-auto;
         }
     }
     .header-nav--menu {
-        @apply my-3 lg:gap-[71px] flex flex-col border border-gray-100 bg-gray-50 p-4 font-normal lg:my-0 lg:mt-0 lg:flex-row lg:border-0 lg:bg-transparent lg:p-0 lg:font-normal;
+        @apply my-3 md:gap-[40px] lg:gap-[71px] flex flex-col border border-gray-100 bg-gray-50 p-4 font-normal md:my-0 md:mt-0 md:flex-row md:border-0 md:bg-transparent md:p-0 md:font-normal lg:my-0 lg:mt-0 lg:flex-row lg:border-0 lg:bg-transparent lg:p-0 lg:font-normal;
        
         &-item:after {
           

@@ -4,7 +4,6 @@
   width: 24px;
   height: 24px;
   position: absolute;
-  top: calc(100vh - 100px);
   right: 50%;
   transform: translate(50%,-50%);
   .chevron {
@@ -86,25 +85,6 @@
 
 }
 
-#BuildingsLoad {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 300px;
-
-}
-
-.cls-1 {
-  fill: none;
-  stroke: #000;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 8.4px;
-  fill-rule: evenodd;
-}
 
 .wrapper {
   width: 100%;
@@ -115,18 +95,12 @@
   align-content: center;
 }
 
-@keyframes lineAnimation {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
+// .slick-track {
+//   display: flex;
+//   gap: 0 20px;
+// }
 
-@keyframes fillAnimation {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: white;
-  }
-}
-
+// .slick-slide {
+//   // margin: 0 10px;
+//   white-space: nowrap;
+// }

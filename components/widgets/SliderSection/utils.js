@@ -9,28 +9,34 @@ export const SLIDE_SETTINGS = {
   cssEase: "linear",
   responsive: [
     {
-      breakpoint: 712,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-
         dots: false,
-        infinite: true,
-
-        autoplay: true,
         speed: 6000,
         autoplaySpeed: 500,
         cssEase: "linear"
       }
     },
     {
-      breakpoint: 400,
+      breakpoint: 450,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+        dots: false,
+        speed: 6000,
+        autoplaySpeed: 500,
+        cssEase: "linear"
+      }
+    },
+    {
+      breakpoint: 320,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
         infinite: true,
-
         autoplay: true,
         speed: 6000,
         autoplaySpeed: 500,

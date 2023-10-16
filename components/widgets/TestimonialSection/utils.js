@@ -49,7 +49,7 @@ export const TESTIMONIAL_SETTINGS = {
   arrows: false,
   slidesToShow: 2,
   slidesToScroll: 1,
-  speed: 1000,
+  speed: 500,
   cssEase: "linear",
   adaptiveHeight: true,
   responsive: [
@@ -57,8 +57,7 @@ export const TESTIMONIAL_SETTINGS = {
       breakpoint: 711,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 1000
+        slidesToScroll: 1
       }
     }
   ]

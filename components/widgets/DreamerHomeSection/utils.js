@@ -4,25 +4,20 @@ export const CARD_SETTINGS = {
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
-  speed: 5000,
-  autoplaySpeed: 0,
   cssEase: "linear",
   responsive: [
     {
       breakpoint: 713,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
-        speed: 4000
+        slidesToScroll: 1
       }
     },
     {
       breakpoint: 320,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 4000
+        slidesToScroll: 1
       }
     }
   ]

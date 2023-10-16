@@ -10,7 +10,7 @@ const useScrolledPage = () => {
   }, []);
 
   const handleScroll = () => {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 50) {
       setScrolled(true);
     } else {
       setScrolled(false);

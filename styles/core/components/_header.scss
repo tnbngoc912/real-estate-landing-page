@@ -1,37 +1,36 @@
-
-    .header {
+.header--container {
+    @apply relative flex items-center justify-between py-3  lg:justify-start;
+    &:after {
+    content: "";
+    margin-left: 211px;
+    margin-right: 211px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
     }
-
-    .header--container {
-        @apply relative flex items-center justify-between py-3  lg:justify-start;
-        &:after {
-            content: "";
-            margin-left: 211px;
-            margin-right: 211px;
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            height: 1px;
-            background: rgba(255, 255, 255, 0.08);
-        }
+    &.custom-show {
+        background: white;
     }
+}
 
-    .header-logo--container {
-        @apply mr-2 lg:mr-8 flex items-center;
-    }
+.header-logo--container {
+    @apply mr-2 lg:mr-8 flex items-center;
+}
 
 
-    .header-container {
-        @apply h-[60px] lg:h-[180px];
-        display: flex;
-        align-items: center;
-        background:none;
-        transition: height .5s;
-      }
-      .header-scrolled {
-        @apply h-[60px] lg:h-[68px];
-        background:white;
-        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
-       
-      }
+.header-container {
+    @apply h-[60px] lg:h-[180px];
+    display: flex;
+    align-items: center;
+    background:none;
+    transition: height .5s;
+}
+
+.header-scrolled {
+    @apply h-[60px] lg:h-[68px];
+    background:white;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+}
